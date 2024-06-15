@@ -11,3 +11,33 @@
 .board-class {
   background-image: url('https://media.istockphoto.com/id/455439369/es/vector/pizarra.jpg?s=612x612&w=0&k=20&c=gKv059-h9ns6txgBsRV4jG7JVM6j0L_1fR8t4WGRR5k=');
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in-out {
+  animation: fadeInOut 3s;
+  color: white;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
