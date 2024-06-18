@@ -2,7 +2,7 @@ import './App.css';
 import './myapp.css'
 import React, { useState, useEffect } from 'react';
 
-const loading = 'https://images.freeimages.com/image/previews/cd6/colorful-mandala-pattern-5691524.jpg';
+const loading = 'https://images.vexels.com/content/158697/preview/pencil-flat-b16e3f.png';
 
 // Creating initial state
 const initialState = {
@@ -27,7 +27,7 @@ function App() {
       }, 3000); //just 3 seconds
       return () => clearTimeout(timer); //clear the timer
     }
-  }, [state.init]);
+  });
 
   // Conditional rendering
   if (state.init) {
@@ -78,7 +78,7 @@ function App() {
               <main className='flex m-10'>
                 <div className='relative flex-grow'>
                   <div className='card-content flex'>
-                    <img src="classroom.jpeg" alt='card-image' className='rounded-lg m-10 shadow-lg' />
+                    <img src="classroom.jpeg" alt='card' className='rounded-lg m-10 shadow-lg' />
                     <div className='rounded-lg bg-yellow-200 m-10 p-5 border-2 border-gray-800'>
                       <h2 className='text-lg font-bold'>Card Title</h2>
                       <p className='text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
@@ -93,7 +93,7 @@ function App() {
                       <h2 className='text-lg font-bold'>Card Title</h2>
                       <p className='text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                     </div>
-                    <img src="classroom.jpeg" alt='card-image' className='rounded-lg m-10 shadow-lg' />
+                    <img src="classroom.jpeg" alt='card' className='rounded-lg m-10 shadow-lg' />
                   </div>
                 </div>
               </main>
