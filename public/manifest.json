@@ -1,0 +1,12 @@
+{
+    "name": "Sin recreo",
+    "short_name": "Sin recreo",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4285f4",
+    "icons": [
+
+    ]
+  }
+  

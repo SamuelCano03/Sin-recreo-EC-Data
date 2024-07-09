@@ -9,7 +9,7 @@
 }
 
 .board-class {
-  background-image: url('https://media.istockphoto.com/id/455439369/es/vector/pizarra.jpg?s=612x612&w=0&k=20&c=gKv059-h9ns6txgBsRV4jG7JVM6j0L_1fR8t4WGRR5k=');
+  background-image: url('images/bgboard.png');
 }
 
 @keyframes fadeIn {
