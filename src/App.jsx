@@ -7,7 +7,7 @@ import InitialScreen from './components/InitialScreen';
 
 
 function App() {
-  const initialState = { init: true, showMsg: true };
+  const initialState = { init: true, showMsg: true }; //change later to true - true
   const [state, setState] = useState(initialState);
 
   const onClick = () => {
@@ -28,8 +28,9 @@ function App() {
     return <InitialScreen onClick={onClick} />;
   } else {
     return (
+      // <div className="hide-scrollbar bg-orange-100">Hi there</div>
       // <div className="bg-fixed bg-cover h-full hide-scrollbar">
-      <div className="hide-scrollbar bg-orange-100">
+      <div className="hide-scrollbar">
         {
           state.showMsg ? (
             <div className='fade-in-out h-screen flex items-center justify-center'>
@@ -41,9 +42,9 @@ function App() {
 
 
           ) : (
-            <div className='fade-in bg-blue-200'>
-              <MainContent />
+            <div className='fade-in'>
               {/* <Header /> */}
+              <MainContent />
             </div>
           )
         }
