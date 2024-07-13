@@ -5,7 +5,7 @@ import Header from './../components/Header';
 const MainContent = () => {
   return (
     <div className='container hide-scrollbar'>
-      {/* <div className='flexi slide'>
+      <div className='flexi slide'>
         <img src="Lily.svg" alt="" />
       </div>
       <div className='flexi slide slide2'>
@@ -16,7 +16,7 @@ const MainContent = () => {
             <p>Se debería invertir un aproximado de 2600 soles mensuales en equipos tecnológicos e infraestructura.</p>
           </div>          
         </div> 
-      </div> */}
+      </div>
       <div className='slide slide3'>
         <Header/>
         <div className='w-3/12 ml-96 mt-20'>
