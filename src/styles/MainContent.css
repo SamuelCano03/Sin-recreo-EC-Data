@@ -1,4 +1,4 @@
-.container{
+.container {
     height: 100vh;
     width: 100%;
     min-width: 100%;
@@ -7,41 +7,43 @@
     scroll-behavior: smooth;
 }
 
-.slides{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    /* align-items: center; */
+.flexi {
     justify-content: right;
-    gap: 50px;
-    scroll-snap-align: start;
+    display: flex;
 }
 
-.slides img{
+.flexi img {
     width: 100%;
     height: 100%;
 }
-.slide1{
-    color: black;
-}
-.slide2{
+
+.slide {
     width: 100%;
     height: 100%;
-    background-image: url('../images/boy.svg');
+    scroll-snap-align: start;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.slide3{
-    background-color: green;
+
+.slide2 {
+    background-image: url('../images/boy.svg');
 }
-.content{
-    /* position: absolute; */
-    top: 20%;
-    left: 10%;
-    /* color: white; */
-    /* text-shadow: 1px 1px 2px gray; */
+
+.slide3 {
+    background-image: url('../images/tech.svg');
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -49,13 +51,14 @@
     display: none;
     overflow-y: scroll;
     height: 100vh;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .hide-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
     overflow-y: scroll;
     height: 100vh;
-  }
-  
+}
