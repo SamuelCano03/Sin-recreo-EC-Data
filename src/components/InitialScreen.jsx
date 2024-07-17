@@ -2,23 +2,23 @@ import React, { useEffect } from 'react';
 
 const InitialScreen = ({ onClick }) => {
   useEffect(() => {
-    // Cargar el CSS
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css';
-    document.head.appendChild(link);
+    if (!document.querySelector('script[src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"]')) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css';
+      document.head.appendChild(link);
 
-    // Cargar el script
-    const script = document.createElement('script');
-    script.src = 'https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Limpiar los elementos al desmontar el componente
-    return () => {
-      document.head.removeChild(link);
-      document.body.removeChild(script);
-    };
+      const script = document.createElement('script');
+      script.src = 'https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js';
+      script.async = true;
+      script.onload = () => {
+        console.log('Script loaded successfully');
+      };
+      script.onerror = () => {
+        console.error('Error loading the script');
+      };
+      document.body.appendChild(script);
+    }
   }, []);
 
   return (
@@ -27,7 +27,6 @@ const InitialScreen = ({ onClick }) => {
         <img src="myfavi.png" className="App-logo" alt="logo" />
         <button onClick={onClick} className='bg-gray-500 hover:bg-blue-500 font-bold py-2 px-1 rounded'>Click me</button>
       </header>
-      {/* Insertar el código embebido */}
       <div
         dangerouslySetInnerHTML={{
           __html: `
