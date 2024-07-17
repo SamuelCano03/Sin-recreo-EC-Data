@@ -7,16 +7,6 @@
     scroll-behavior: smooth;
 }
 
-.flexi {
-    justify-content: right;
-    display: flex;
-}
-
-.flexi img {
-    width: 100%;
-    height: 100%;
-}
-
 .slide {
     width: 100%;
     height: 100%;
@@ -25,16 +15,36 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.slide1 {
+    justify-content: right;
+    display: flex;
+}
 
+.slide1 img {
+    width: 100%;
+    height: 100%;
+}
 .slide2 {
     background-image: url('../images/boy.svg');
+    justify-content: right;
+    display: flex;
 }
 
 .slide3 {
     background-image: url('../images/tech.svg');
 }
 
-
+/* text on bard */
+.text-on-slide2 {
+    position: relative;
+    top: 15%;
+    right: 25%;
+}
+.text-on-slide3 {
+    position: relative;
+    top: 15%;
+    left: 25%;
+}
 
 
 
