@@ -5,22 +5,22 @@ import Header from './../components/Header';
 const MainContent = () => {
   return (
     <div className='container hide-scrollbar'>
-      <div className='slide slide1'>
+      {/* <div className='slide slide1'>
         <img src="Lily.svg" alt="" />
-      </div>
-      <div className='slide slide2'>
-        <div className='w-2/5 shadow-lg '>
+      </div> */}
+      {/* <div className='slide slide2'>
+        <div className='w-2/5 ' style={{marginRight: '10%', marginTop: '5%'}}>
           <h2 className='text-red-600 my-10 text-2xl text-center'>¿CUANTO GASTA EL ESTADO EN EDUCAR A UN NIÑO?</h2>
           <div className='bg-yellow-400 p-5 border-solid border-2 rounded-lg border-black'>
             <p>Desde una visión cuantitativa del gasto público, se busca analizar cuánto dinero presupuestal anual es destinado a educación y evaluar la cantidad individual de gasto estatal por niño. Se pretende ver si esta inversión se refleja en la realidad nacional, examinando el vínculo entre el gasto público y la actualidad educativa. Además, se buscará ligar la información con el capital humano y cuántos niños logran asistir a la universidad.</p>
             <p>Se debería invertir un aproximado de 2600 soles mensuales en equipos tecnológicos e infraestructura.</p>
           </div>          
         </div> 
-      </div>
+      </div> */}
       <div className='slide slide3'>
         <Header/>
-        <div className='w-4/12 text-on-slide3'>
-          <p className='text-white'>
+        <div className='texto-pizarra'>
+          <p className='text-white bg-orange-400'>
             Los colegios tecnológicos son muy caros. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nihil fuga esse, ipsa, mollitia ipsum in et culpa vitae consectetur alias dolore accusantium. Consequatur et itaque asperiores consequuntur doloremque recusandae!
           </p>
         </div>

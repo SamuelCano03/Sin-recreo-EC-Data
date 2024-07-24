@@ -1,19 +1,12 @@
 import React, { useState } from 'react';
-
 const Header = () => {
-  const [zone, setZone] = useState('');
+  //eslint-disable-next-line
   const [internetQuality, setInternetQuality] = useState('');
+  //eslint-disable-next-line
   const [devices, setDevices] = useState('');
 
   return (
-    <header className="text-black font-medium bg-green-700 flex py-4 space-x-16 justify-evenly">
-      <div className='flex'>
-        <select name="región" id="" className='bg-gray-200 rounded-full px-6 py-2' onChange={e => setZone(e.target.value)}>
-          <option value="">Zonas</option>
-          <option value="Lima">Lima</option>
-          <option value="ural">Rural</option>
-        </select>
-      </div>
+    <header className="text-black font-medium bg-green-700 flex py-4 justify-evenly ">
       <div className='flex '>
         <select name="Internet" id="" className='bg-gray-200 rounded-full px-6 py-2' onChange={e => setInternetQuality(e.target.value)}>
           <option value="">Calidad de internet</option>

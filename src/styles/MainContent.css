@@ -31,23 +31,63 @@
 }
 
 .slide3 {
+    
     background-image: url('../images/tech.svg');
-}
-
-/* text on bard */
-.text-on-slide2 {
     position: relative;
-    top: 15%;
-    right: 25%;
-}
-.text-on-slide3 {
-    position: relative;
-    top: 15%;
-    left: 25%;
 }
 
+.texto-pizarra {
+    width: 300px;
+    position: absolute;
+    top: 8%;
+    left: 15%;
+}
+/* @media only screen and (max-width: 990px) {
+    .texto-pizarra {
+        margin-top: 8%;
+        margin-left: 23%;
+        width: 35%;
+    }
+}
+@media only screen and (max-width: 890px) {
+    .texto-pizarra {
+        margin-top: 10%;
+        margin-left: 20%;
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 790px) {
+    .texto-pizarra {
+        margin-top: 10%;
+        margin-left: 15%;
+        width: 340px;
+        /* width: 45%; 
+    }
+}
+@media only screen and (max-width: 670px) {
+    .texto-pizarra {
+        margin-top: 10%;
+        margin-left: 15%;
+        width: 300px;
+        /* width: 45%; 
+    }
+}
+@media only screen and (max-width: 480px) {
+    .texto-pizarra {
+        margin-top: 12%;
+        margin-left: 15%;
+        width: 70%;
+    }
+}
 
-
+@media only screen and (max-width: 320px) {
+    .texto-pizarra {
+        margin-top: 15%;
+        margin-left: 10%;
+        width: 80%;
+    }
+}
+ */
 
 
 
@@ -72,3 +112,4 @@
     overflow-y: scroll;
     height: 100vh;
 }
+
