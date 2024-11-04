@@ -43,7 +43,7 @@ function App() {
 
           ) : (
             <div className='fade-in'>
-              {/* <Header /> */}
+              <Header />
               <MainContent />
             </div>
           )
