@@ -1,13 +1,13 @@
 import './App.css';
 import './myapp.css';
 import React, { useState, useEffect } from 'react';
-// import Header from './components/Header';
+ //import Header from './components/Header';
 import MainContent from './components/MainContent';
 import InitialScreen from './components/InitialScreen';
 
 
 function App() {
-  const initialState = { init: false, showMsg: false }; //change later to true - true
+  const initialState = { init: true, showMsg: true }; //change later to true - true
   const [state, setState] = useState(initialState);
 
   const onClick = () => {
@@ -43,7 +43,7 @@ function App() {
 
           ) : (
             <div className='fade-in'>
-              <Header />
+              {/*<Header />*/}
               <MainContent />
             </div>
           )
